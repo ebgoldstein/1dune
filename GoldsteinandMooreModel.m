@@ -46,8 +46,8 @@ icsteps=0.01;
 initCV=0.01:icsteps:1;
 
 %ML constants
-C1=8.05;
-C2=4.33;
+C1=8.8;
+C2=4.6;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %preallocate space for matricies that record the number of fixed points,

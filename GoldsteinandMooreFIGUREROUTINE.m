@@ -1,7 +1,7 @@
-%This code plots the results of the stabiltiy diagram, yielding the
+%This code plots the results of the stabiltiy diagram, yielding the 2
 %figures in the manuscript. 
 
-%Written by EBG 11/2014-
+%Written by EBG 11/2014
 
 %Creative Commons 
 %Attribution-NonCommercial-ShareAlike 
@@ -34,8 +34,10 @@ colormap(bone)
 caxis([0 2])
 %clabel('# of FPs')
 %title('number of stable solutions')
-ylabel('R* (R/D_m_a_x)', 'FontSize',14)
-xlabel('S* (S/r)', 'FontSize',14)
+% ylabel('R* (R/D_m_a_x)', 'FontSize',14)
+% xlabel('S* (S/r)', 'FontSize',14)
+ylabel('R*', 'FontSize',14)
+xlabel('S*', 'FontSize',14)
 axis xy
 set(gca,'XTick',[100,200,300,399])
 set(gca,'XTickLabel',{'5','10','15','20'}, 'FontSize',14)
@@ -75,47 +77,50 @@ minheight=linspace(1,om,length(omegaV));
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 subplot(2,2,2)
-plot(FPmax(1:361,loc1),'k','LineWidth',2)
+plot(FPmax(1:396,loc1),'k','LineWidth',2)
 hold on
-plot(363:(om),FPmax(363:(om),loc1),'k','LineWidth',2)
+plot(398:(om),FPmax(398:(om),loc1),'k','LineWidth',2)
 plot(FPmin(:,loc1),'k','LineWidth',2)
-plot(M(1:361,loc1),'--k','LineWidth',2)
+plot(M(1:396,loc1),'--k','LineWidth',2)
 plot(USFP,'--k','LineWidth',2)
 set(gca,'XTick',[100,200,300,400])
 set(gca,'XTickLabel',{'5','10','15','20'}, 'FontSize',14)
 ylabel('D*', 'FontSize',14)
-xlabel('S* (S/r)', 'FontSize',14)
+xlabel('S*', 'FontSize',14)
+%xlabel('S* (S/r)', 'FontSize',14)
 title('R*=0.1', 'FontSize',14)
 ylim([-0.01 1])
 axis square
 
 subplot(2,2,3)
-plot(FPmax(1:98,loc2),'k','LineWidth',2)
+plot(FPmax(1:108,loc2),'k','LineWidth',2)
 hold on
-plot(99:(om),FPmax(99:(om),loc2),'k','LineWidth',2)
+plot(109:(om),FPmax(109:(om),loc2),'k','LineWidth',2)
 plot(FPmin(:,loc2),'k','LineWidth',2)
 plot(M(:,loc2),'--k','LineWidth',2)
 plot(USFP,'--k','LineWidth',2)
 set(gca,'XTick',[100,200,300,400])
 set(gca,'XTickLabel',{'5','10','15','20'}, 'FontSize',14)
 ylabel('D*', 'FontSize',14)
-xlabel('S* (S/r)', 'FontSize',14)
+xlabel('S*', 'FontSize',14)
+%xlabel('S* (S/r)', 'FontSize',14)
 title('R*=0.3', 'FontSize',14)
 ylim([-0.01 1])
 
 axis square
 
 subplot(2,2,4)
-plot(FPmax(1:24,loc3),'k','LineWidth',2)
+plot(FPmax(1:27,loc3),'k','LineWidth',2)
 hold on
-plot(25:(om),FPmax(25:(om),loc3),'k','LineWidth',2)
+plot(28:(om),FPmax(28:(om),loc3),'k','LineWidth',2)
 plot(FPmin(:,loc3),'k','LineWidth',2)
 plot(M(:,loc3),'--k','LineWidth',2)
 plot(USFP,'--k','LineWidth',2)
 set(gca,'XTick',[100,200,300,400])
 set(gca,'XTickLabel',{'5','10','15','20'}, 'FontSize',14)
 ylabel('D*', 'FontSize',14)
-xlabel('S* (S/r)', 'FontSize',14)
+xlabel('S*', 'FontSize',14)
+%xlabel('S* (S/r)', 'FontSize',14)
 title('R*=0.8', 'FontSize',14)
 ylim([-0.01 1])
 
