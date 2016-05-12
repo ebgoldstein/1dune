@@ -3,9 +3,8 @@
 
 %Written by EBG 11/2014
 
-%Creative Commons 
-%Attribution-NonCommercial-ShareAlike 
-%3.0 Unported
+%The MIT License (MIT)
+%Copyright (c) 2016 Evan B. Goldstein
 
 %Copyright held by:
 % Evan B. Goldstein, Ph.D.
