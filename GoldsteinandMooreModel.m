@@ -18,11 +18,10 @@
 %By averaging the final part of the trajectory, the code is able to 
 %determine where the stable dune heights are. 
 
-%Written by EBG from 9/2014 to 11/2014
+%Written and tweaked by EBG from 9/2014 to 5/2016
 
-%Creative Commons 
-%Attribution-NonCommercial-ShareAlike 
-%3.0 Unported
+%The MIT License (MIT)
+%Copyright (c) 2016 Evan B. Goldstein
 
 %Copyright held by:
 % Evan B. Goldstein, Ph.D.
